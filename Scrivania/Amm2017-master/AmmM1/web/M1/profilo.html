@@ -1,16 +1,84 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Correttezza sintattica -->
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="it">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <title>NerdBook</title>  <!-- Titolo pagina -->
+        <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="nerdbook, social, book, nerd" >
+        <meta name="description" content="SocialNerdBook" >
+        <meta name="author" content="Concas Francesco Giuseppe">
+        <meta http-equiv="refresh" content="60" >
+       
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class ="page" >
+           <div class = "header" >
+           </div>
+            <div class ="nav" >
+               
+               <ul class="menu"> <!-- Togliendo li riesco a visualizzare il menu orizz-->
+                 <!--DEVO ANCORA DEFINIRE IL LINK-->  
+                 <li> <a href="descrizione.html">Descrizione</a></li>
+                 <li><a href="login.html">Login</a> </li>
+               </ul>
+                
+            </div>
+            
+            <div class="content" >
+                
+                <div class ="inserimentoDati" >
+                    
+                    <h3>Inserimento dati</h3>
+                   <form class="dati" method="GET" action="servlet.java">
+                       <!--Nome-->
+                     <label for="nomeUtente">Nome</label>
+                     <input type="text" id="nomeUtente" name="nomeUtente">
+                     <br/>
+                      <!--Cognome-->
+                      <label for="cognomeUtente">Cognome</label>
+                     <input type="text" id="cognomeUtente" name="cognomeUtente">
+                     <br/>
+                     <!--Immagine-->
+                     <label for="immagine">URL immagine</label>
+                     <input type="url" id="immagine" name="immagine">
+                     <br/>
+                      <!--Testo presentazione-->
+                     <label for="lungo">Frase presentazione</label>
+                     <textarea rows="4" cols="20" name="lungo" id="lungo">Inserire frase</textarea>
+                     <br/>
+                     <!--Data di nascità-->
+                     <label for="data">Data di nascità</label>
+                     <input type="date" id="data" name="data">
+                     <br/>
+                      <!--Username-->
+                     <label for="username">Username</label>
+                     <input type="text" id="username" name="username">
+                     <br/>
+                      <!--Password-->
+                     <label for="password"> Password</label>
+                     <input type="password" id="password" name="password">
+                     <br/>
+                      <!--Conferma Password-->
+                     <label for="cpassword">Conferma password</label>
+                     <input type="password" id="cpassword" name="cpassword">
+                     <br/>
+                     <button type="submit" id="invioLogin">Login</button>
+                     
+                     
+                   </form> 
+                </div>
+            
+            </div>
+            <div class="footer" >
+                <p> Tutte le immagini di NerdBook inserite non sono
+                    di proprietà, ma son state prese da google per fini didattici. 
+            </div>
+        </div>
     </body>
 </html>
+    

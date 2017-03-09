@@ -1,16 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Correttezza sintattica -->
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="it">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <title>NerdBook</title>  <!-- Titolo pagina -->
+        <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="nerdbook, social, book, nerd" >
+        <meta name="description" content="SocialNerdBook" >
+        <meta name="author" content="Concas Francesco Giuseppe">
+        <meta http-equiv="refresh" content="60" >
+       
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class ="page" >
+           <div class = "header" >
+           </div>
+            <div class ="nav" >
+               
+               <ul class="menu"> <!-- Togliendo li riesco a visualizzare il menu orizz-->
+                 <!--DEVO ANCORA DEFINIRE IL LINK-->  
+                 <li> <a href="descrizione.html">Descrizione</a></li>
+                 <li><a href="profilo.html">Profilo</a> </li>
+                 <li> <a href="bacheca.html">Bacheca</a></li>
+                   
+                </ul>
+                
+            </div>
+            
+            <div class="content" >
+                
+                <div class ="login" >
+                    
+                   
+                   <form class="login" method="GET" action="servlet.java">
+                     <label for="username">Username</label>
+                     <input type="text" id="username" name="username">
+                     <br>
+                     <label for="password"> Password</label>
+                     <input type="password" id="password" name="password">
+                     
+                     <br/>
+                     <button type="submit" id="invioLogin">Login</button>
+                     
+                     <div class="registrazione">
+                        <a href="LogServlet">Non sono ancora registrato</a>
+                    </div>
+                   </form> 
+                </div>
+            
+            </div>
+            <div class="footer" >
+                <p> Tutte le immagini di NerdBook inserite non sono
+                    di proprietà, ma son state prese da google per fini didattici. 
+            </div>
+        </div>
     </body>
 </html>
