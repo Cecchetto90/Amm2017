@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Correttezza sintattica -->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="it">
+    <head>
+        <title>NerdBook</title>  <!-- Titolo pagina -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="nerdbook, social, book, nerd" >
+        <meta name="description" content="SocialNerdBook" >
+        <meta name="author" content="Concas Francesco Giuseppe">
+        <meta http-equiv="refresh" content="60" >
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+       
+    </head>
+    <body>
+        <div class ="page" >
+           <div class = "headerLogin" >
+           </div>
+            
+            
+            <div class="contentLogin" >
+                <div class="logoName">
+                    
+                </div>
+                
+                <div class ="login" >
+                    
+                   
+                    
+                    <section class="fotoProfilo">
+                        <img title="Mio profilo" src="utente1.png" width="85" height="85">
+                    </section>
+                   
+                   <form class="login" method="GET" action="servlet.java">
+                     <label for="username"></label>
+                     <input type="text" id="username" name="username" placeholder="username">
+                     <br>
+                     <label for="password"></label>
+                     <input type="password" id="password" name="password" placeholder="password">
+                     
+                     <br/>
+                     <button class="bottone"  type="submit" id="invioLogin">Login</button>
+                     
+                     <div class="registrazione">
+                        <a href="LogServlet">Non sono ancora registrato</a>
+                    </div>
+                   </form> 
+                </div>
+            
+            </div>
+            <div class="footer" >
+                <p> Tutte le immagini di NerdBook inserite non sono
+                    di proprietà, ma son state prese da google per fini didattici. 
+            </div>
+        </div>
+    </body>
+</html>

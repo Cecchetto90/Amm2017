@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- Correttezza sintattica -->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="it">
+    <head>
+        <title>NerdBook</title>  <!-- Titolo pagina -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="nerdbook, social, book, nerd" >
+        <meta name="description" content="SocialNerdBook" >
+        <meta name="author" content="Concas Francesco Giuseppe">
+        <meta http-equiv="refresh" content="60" >
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+       
+    </head>
+    <body>
+        <div class ="page" >
+           <div class = "header" >
+           </div>
+            
+             <!--Divisione Nav-->
+            <div class ="nav" >
+                
+                <ul class="menu"> <!-- Togliendo li riesco a visualizzare il menu orizz-->
+                 <!--DEVO ANCORA DEFINIRE IL LINK-->
+                 <li> <a href="descrizione.html">Descrizione</a></li>
+                 <li><a href="login.html">Login</a> </li>
+                 <li><a href="bacheca.html">Bacheca</a> </li>
+                </ul>
+               
+                
+                <aside class="profilo">
+                    <span><strong>Francesco Concas</strong></span>
+                </aside>
+                
+                <aside class="logoutLink">
+                    <a href=login.html>Logout</a>
+                </aside>
+                
+                <aside class="imgutente">
+                    <img title="utente" alt="utenteImage" src="utente.jpg" width="30" height="30"> 
+                </aside>
+                 
+            </div>  
+            
+              <!--Sezione SideBar Laterale-->
+            <section class="sideBar1">
+                
+                <aside class="testo">
+                    <h2>NerdBook</h2>
+                </aside>
+                
+                <!--Sezione Persone-->
+                
+                <section class="persone1"> 
+                    <aside class="personeSideBar">
+                        <h3>Persone</h3>
+                    </aside>
+                    
+                    <aside class="NameAndImg">
+                        <img title="Vittorio S." src="utente.jpg" width="50" height="50">
+                        <aside class="vittorio">
+                            <p>Vittorio Sgarbi</p>
+                        </aside>
+                    </aside>
+                    
+                    <aside class="NameAndImg1">
+                        <img title="Silvio B." src="utente.jpg" width="50" height="50">
+                        <aside class="silvio">
+                            <p>Silvio Berlusconi</p>
+                        </aside>
+                    </aside>
+                    
+                     <aside class="NameAndImg2">
+                        <img title="Belen R." src="utente.jpg" width="50" height="50">
+                        <aside class="belen">
+                            <p>Belen Rodriguez</p>
+                        </aside>
+                    </aside>
+                    
+                </section>
+                
+                <!--Sezione Gruppi-->
+                
+                <section class="gruppo1"> 
+                    <aside class="gruppoSideBar">
+                        <h3>Gruppi</h3>
+                    </aside>
+                    
+                    <aside class="GruppoAndImg">
+                        <img title="Lavoro" src="lavoro.jpg" width="50" height="50">
+                        <aside class="lavoro1">
+                            <p>Lavoro</p>
+                        </aside>
+                    </aside>
+                    
+                    <aside class="GruppoAndImg1">
+                        <img title="Vip" src="vip.png" width="50" height="50">
+                        <aside class="vip1">
+                            <p>V.I.P</p>
+                        </aside>
+                    </aside>
+                    
+                </section>
+                
+            </section>
+            
+            
+            <div class="content" >
+                
+                <div class ="inserimentoDati" >
+                   
+                    <section class="fotoProf">
+                        <img title="utente" alt="utenteImage" src="utente.jpg" > 
+                    </section>
+                   
+                   <form class="dati" method="GET" action="servlet.java">
+                    
+                       <!--Nome-->
+                     <label for="nomeUtente">Nome</label>
+                     <input type="text" id="nomeUtente" name="nomeUtente">
+                     <br/>
+                      <!--Cognome-->
+                      <label for="cognomeUtente">Cognome</label>
+                     <input type="text" id="cognomeUtente" name="cognomeUtente">
+                     <br/>
+                     <!--Immagine-->
+                     <label for="immagine">URL immagine</label>
+                     <input type="url" id="immagine" name="immagine">
+                     <br/>
+                      <!--Testo presentazione-->
+                     <label for="lungo">Frase presentazione</label>
+                     <textarea rows="4" cols="32" name="lungo" id="lungo" placeholder="max 70 caratteri"></textarea>
+                     <br/>
+                     <!--Data di nascità-->
+                     <label for="data">Data di nascità</label>
+                     <input type="date" id="data" name="data">
+                     <br/>
+                      <!--Username-->
+                     <label for="username">Username</label>
+                     <input type="text" id="username" name="username">
+                     <br/>
+                      <!--Password-->
+                     <label for="password"> Password</label>
+                     <input type="password" id="password" name="password">
+                     <br/>
+                      <!--Conferma Password-->
+                     <label for="cpassword">Conferma password</label>
+                     <input type="password" id="cpassword" name="cpassword">
+                     <br/>
+                     <button type="submit" id="invioLogin">Aggiorna dati</button>
+                     <br>
+                     <hr>
+                     
+                     
+                   </form> 
+                </div>
+            
+            </div>
+            <div class="footer" >
+                <p> Tutte le immagini di NerdBook inserite non sono
+                    di proprietà, ma son state prese da google per fini didattici. 
+            </div>
+        </div>
+    </body>
+</html>
+    
